@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+@font-face {
+	font-family: 'Made-Gentle';
+	src: url('../public/fonts/Made-Gentle.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../public/fonts/Poppins-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins-Italic';
+	src: url('../public/fonts/Poppins-Italic.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sigmundpro-SemiBold';
+	src: url('../public/fonts/Sigmundpro-SemiBold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sigmundpro-SemiBoldItalic';
+	src: url('../public/fonts/Sigmundpro-SemiBoldItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
