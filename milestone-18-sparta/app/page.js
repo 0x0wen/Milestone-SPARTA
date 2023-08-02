@@ -15,8 +15,7 @@ import burn from '../public/images/burn.png'
 
 const Home = () => {
 	return (
-		<div className="bg-green4 min-w-screen min-h-screen">
-			<Navbar />
+		<>
 			<Header
 				header="EMISSION COUNTER"
 				desc="Try our Emission Counter to see how much you contribute to overall global emission."
@@ -135,8 +134,8 @@ const Home = () => {
 					</li>
 				</ul>
 			</section>
-			<Footer />
-		</div>
+			
+			</>
 	)
 }
 
