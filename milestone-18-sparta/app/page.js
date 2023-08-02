@@ -1,90 +1,145 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import cars from '../public/images/cars.webp'
+import greenery from '../public/images/greenery.jpg'
 import Image from 'next/image'
 import waveIndo1 from '../public/images/waveIndo1.svg'
 import waveIndo2 from '../public/images/waveIndo2.svg'
 import jakarta from '../public/images/jakarta.jpeg'
 import factory from '../public/images/factory.jpg'
-import waveQuotes1 from '../public/images/waveQuotes1.svg'
-import waveQuotes2 from '../public/images/waveQuotes2.svg'
+import waveDYP1 from '../public/images/waveDYP1.svg'
+import waveDYP2 from '../public/images/waveDYP2.svg'
 import transport from '../public/images/transport.png'
 import recycle from '../public/images/recycle.png'
 import burn from '../public/images/burn.png'
-
+import Marquee from 'react-fast-marquee'
 const Home = () => {
 	return (
 		<>
 			<Header
-				header="EMISSION COUNTER"
-				desc="Try our Emission Counter to see how much you contribute to overall global emission."
-				image={cars}
+				header="Go Green; Breathe Clean"
+				desc="It starts with you."
+				image={greenery}
 			/>
-			<section className=" mt-10 text-green8 font-paragraph font-bold text-center">
-				<h2 className=" mt-20 font-subheader text-3xl md:text-5xl">Did You Know?</h2>
-				<ul className="mt-5 md:grid md:grid-cols-3">
-					<li className="p-5 ">
-						<h3 className="text-5xl md:text-7xl font-bold">
-							99<span className="text-base">%</span>
-						</h3>
-						<p>
-							of all global populations breathe air that exceeds WHO guidelines
-							limits.
-						</p>
-					</li>
-					<li className="p-5">
-						<h3 className="text-5xl  md:text-7xl font-bold">37</h3>
-						<p>
-							of the 40 most polluted cities in the world are in South Asia.
-						</p>
-					</li>
-					<li className="p-5">
-						<h3 className="text-5xl  md:text-7xl font-bold">7</h3>
-						<p>million people die every year from air pollution.</p>
-					</li>
-				</ul>
+			<section className="min-h-screen text-green8 font-paragraph font-bold text-center md:mt-0 flex justify-center items-center">
+				<div className="md:my-auto">
+					<h2 className="mt-24 font-subheader text-3xl md:text-5xl md:mb-10">
+						Did You Know?
+					</h2>
+					<ul className="mt-5 md:grid md:grid-cols-3 ">
+						<li className="p-5 ">
+							<h3 className="text-5xl md:text-7xl font-bold">
+								99<span className="text-base">%</span>
+							</h3>
+							<p className="w-52 mx-auto">
+								of all global populations breathe air that exceeds WHO
+								guidelines limits.
+							</p>
+						</li>
+						<li className="p-5">
+							<h3 className="text-5xl  md:text-7xl font-bold">37</h3>
+							<p className="w-52 mx-auto">
+								of the 40 most polluted cities in the world are in South Asia.
+							</p>
+						</li>
+						<li className="p-5">
+							<h3 className="text-5xl  md:text-7xl font-bold">7</h3>
+							<p className="w-52 mx-auto">
+								million people die every year from air pollution.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
-			<section className="h-screen relative mb-52">
+			<section className="min-h-screen relative mb-52">
 				<div className="-z-10">
 					<Image
 						src={jakarta}
-						className="h-[141%] w-full object-cover absolute top-0"
+						className="h-[140%] w-full object-cover absolute top-0"
 					/>
-					<div className="bg-black bg-opacity-70 h-[141%] w-full absolute top-0"></div>
+					<div className="bg-black bg-opacity-70 h-[140%] w-full absolute top-0"></div>
 				</div>
 				<section className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 text-center text-white md:w-full">
-					<h2 className="font-header text-5xl md:mb-20">What about Indonesia?</h2>
+					<h2 className="font-header text-5xl mb-12 md:mb-20">
+						What about <span className='text-red-700'>Indo</span>nesia?
+					</h2>
 					<ul className="md:grid md:grid-cols-2">
 						<li className="p-5">
-							<p className="font-paragraph text-white opacity-80">
+							<p className="font-paragraph text-green5 opacity-70">
 								2022 Average PM 2.5 concentration is
 							</p>
-							<h3 className="font-bold text-5xl md:text-7xl">6.1<span className='text-lg'>x</span></h3>
-							<p className="font-paragraph text-white opacity-80">the WHO annual air quality guideline value</p>
+							<h3 className="font-bold text-5xl md:text-7xl">
+								6.1<span className="text-lg">x</span>
+							</h3>
+							<p className="font-paragraph text-green5 opacity-70">
+								the WHO annual air quality guideline value
+							</p>
 						</li>
 						<li className="p-5">
-							<p className="font-paragraph text-white opacity-80">in 2023</p>
+							<p className="font-paragraph text-green5 opacity-70">in 2023</p>
 							<h3 className="font-bold text-5xl md:text-7xl">6.900</h3>
-							<p className="font-paragraph text-white opacity-80">
+							<p className="font-paragraph text-green5 opacity-70">
 								people lost their lives in Jakarta due to the adverse effects of
 								air pollution.
 							</p>
 						</li>
 					</ul>
 				</section>
-				<Image src={waveIndo2} className="absolute top-0 w-full" />
-				<Image src={waveIndo1} className="absolute -bottom-[14rem] w-full" />
+				<Image src={waveIndo1} className="absolute -top-1 w-full" />
+				<Image src={waveIndo2} className="absolute -bottom-[14rem] w-full" />
 			</section>
-			<section className="bg-brown2 pt-10 pb-20 text-center font-paragraph">
-				<section className="bg-green4 text-green8 w-72 rounded-3xl mx-auto py-14">
-					<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-						“Preserve and cherish the pale blue dot, the only home we've ever
-						known.”
-					</p>
-					<h3 className="text-2xl font-extrabold">Carl Sagan</h3>
-					<p className="text-green8 opacity-70">Astronomer</p>
-				</section>
+			<section className="bg-brown2 h-screen py-20 text-center font-paragraph ">
+				<Marquee className='' speed={20}>
+					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
+						<div className="">
+							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
+								“Preserve and cherish the pale blue dot, the only home we've
+								ever known.”
+							</p>
+							<h3 className="text-2xl font-extrabold ">Carl Sagan</h3>
+							<p className="text-green8 opacity-70 ">Astronomer</p>
+						</div>
+					</section>
+					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
+						<div className="my-auto">
+							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
+								“You can start changing the world for the better daily - no
+								matter how small the action.”
+							</p>
+							<h3 className="text-2xl font-extrabold">Nelson Mandela</h3>
+							<p className="text-green8 opacity-70">Politician</p>
+						</div>
+					</section>
+					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
+						<div className="my-auto">
+							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
+								“The Earth does not belong to us: we belong to the Earth.”
+							</p>
+							<h3 className="text-2xl font-extrabold">Marlee Matlin</h3>
+							<p className="text-green8 opacity-70">Activist</p>
+						</div>
+					</section>
+					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
+						<div className="my-auto">
+							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
+								“We are living on this planet as if we had another one to go
+								to.”
+							</p>
+							<h3 className="text-2xl font-extrabold">Terri Swearingen</h3>
+							<p className="text-green8 opacity-70">Nurse</p>
+						</div>
+					</section>
+					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
+						<div className="my-auto">
+							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
+								“We shall require a substantially new manner of thinking if
+								mankind is to survive.”
+							</p>
+							<h3 className="text-2xl font-extrabold">Albert Einstein</h3>
+							<p className="text-green8 opacity-70">Physicist</p>
+						</div>
+					</section>
+				</Marquee>
 			</section>
 			<section className="h-screen relative mb-40">
 				<div className="-z-10">
@@ -97,26 +152,30 @@ const Home = () => {
 				<h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 font-header text-5xl w-32 text-center leading-loose">
 					Do Your Part.
 				</h3>
-				<Image src={waveQuotes1} className="absolute -top-8 w-full" />
-				<Image src={waveQuotes2} className="absolute -bottom-40 w-full" />
+				<Image src={waveDYP1} className="absolute -top-1 w-full" />
+				<Image src={waveDYP2} className="absolute -bottom-40 w-full" />
 			</section>
 			<section className="text-center">
-				<h2 className="text-green8 font-header text-5xl pb-10">What can we do?</h2>
+				<h2 className="text-green8 font-header text-5xl pt-10 pb-10">
+					What can we do?
+				</h2>
 				<ul className="text-green8 mb-32 ">
 					<li className="flex flex-wrap justify-center items-center mb-10">
 						<Image src={transport} />
-						<section className='w-80 md:mx-6'>
-							<h3 className='font-subheader text-2xl'>Use public transportation</h3>
-							<p className='font-paragraph'>
+						<section className="w-80 md:mx-6">
+							<h3 className="font-subheader text-2xl">
+								Use public transportation
+							</h3>
+							<p className="font-paragraph">
 								Lesser vehicles on roads will contribute to lesser emissions.
 							</p>
 						</section>
 					</li>
 					<li className="flex flex-wrap justify-center items-center mb-10">
-						<Image src={recycle} className='md:order-last'/>
-						<section className='w-80 md:mx-6'>
-							<h3 className='font-subheader text-2xl'>Recycle and reuse</h3>
-							<p className='font-paragraph'>
+						<Image src={recycle} className="md:order-last" />
+						<section className="w-80 md:mx-6">
+							<h3 className="font-subheader text-2xl">Recycle and reuse</h3>
+							<p className="font-paragraph">
 								Recycling helps reduce greenhouse gas emissions by reducing
 								energy consumption.
 							</p>
@@ -124,9 +183,9 @@ const Home = () => {
 					</li>
 					<li className="flex flex-wrap justify-center items-center mb-10">
 						<Image src={burn} />
-						<section className='w-80 md:mx-6'>
-							<h3 className='font-subheader text-2xl'>Stop waste burning</h3>
-							<p className='font-paragraph'>
+						<section className="w-80 md:mx-6">
+							<h3 className="font-subheader text-2xl">Stop waste burning</h3>
+							<p className="font-paragraph">
 								The toxic chemicals released during burning can lead to health
 								problems.
 							</p>
@@ -134,8 +193,7 @@ const Home = () => {
 					</li>
 				</ul>
 			</section>
-			
-			</>
+		</>
 	)
 }
 

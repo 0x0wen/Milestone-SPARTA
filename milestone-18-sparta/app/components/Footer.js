@@ -1,4 +1,4 @@
-import footerWave from '../../public/images/footerWave.svg'
+import waveFooter from '../../public/images/waveFooter.svg'
 import logoITB from '../../public/images/logoITB.svg'
 import logoSTEIK22 from '../../public/images/logoSTEIK22.svg'
 import footerBG from '../../public/images/footerBG.svg'
@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Footer = () => {
 	return (
 		<footer className="relative">
-			<Image src={footerWave} alt="" className="w-full" />
+			<Image src={waveFooter} alt="" className="w-full" />
 			<section className="bg-green1 text-white font-paragraph -mt-1 py-5">
 				<ul className="grid grid-cols-3 self-center md:text-xl">
 					<li className="text-center">

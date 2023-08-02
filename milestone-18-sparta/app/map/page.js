@@ -1,5 +1,5 @@
 import MapClient from './clientpage';
-import map from '../../public/images/map.webp'
+import map from '../../public/images/map.png'
 import Header from "../components/Header";
 const MapPage = () => {
     return (
