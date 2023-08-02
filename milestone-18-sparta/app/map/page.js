@@ -10,7 +10,7 @@ const MapPage = () => {
                 image={map}
             />
             <section className='pb-5 mt-10 text-green8 font-paragraph font-bold text-center overflow-auto'>
-            <h2 className="mt-20 xl:mt-0  text-3xl md:text-5xl">Click anywhere on the map to see the AQI of your location</h2>
+            <h2 className="my-20 xl:mt-0  text-3xl md:text-5xl">Click anywhere on the map to see the AQI of your location</h2>
             
             <MapClient /></section>
 
