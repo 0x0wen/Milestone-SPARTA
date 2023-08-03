@@ -5,10 +5,16 @@ import close from '../../public/icons/close.svg'
 const SideMenu = (props) => {
 	return (
 		<nav className="h-screen">
-			<div className="absolute top-0 left-0 bg-black bg-opacity-70 h-screen w-screen pointer-events-none"></div>
+			<div
+				className="absolute top-0 left-0 bg-black bg-opacity-70 h-screen w-screen"
+				onClick={props.onClick}
+			></div>
 			<ul className="absolute top-0 right-0 bg-green1 h-screen w-40 sm:w-64 md:w-96">
-				<section className='flex justify-end p-5'>
-					<button className="right-4 top-2 hover:bg-slate-400" onClick={props.onClick}>
+				<section className="flex justify-end p-5">
+					<button
+						className="right-4 top-2 hover:bg-slate-400"
+						onClick={props.onClick}
+					>
 						<Image src={close} />
 					</button>
 				</section>

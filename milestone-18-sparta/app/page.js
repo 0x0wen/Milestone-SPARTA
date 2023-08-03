@@ -23,8 +23,8 @@ const Home = () => {
 			/>
 			<section className="min-h-screen text-green8 font-paragraph font-bold text-center md:mt-0 flex justify-center items-center">
 				<div className="md:my-auto">
-					<h2 className="mt-24 font-subheader text-3xl md:text-5xl md:mb-10">
-						Did You Know?
+					<h2 className=" mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
+						Did you know?
 					</h2>
 					<ul className="mt-5 md:grid md:grid-cols-3 ">
 						<li className="p-5 ">
@@ -51,17 +51,17 @@ const Home = () => {
 					</ul>
 				</div>
 			</section>
-			<section className="min-h-screen relative mb-52">
+			<section className="min-h-[110vh] md:min-h-[130vh] lg:min-h-[150vh] relative">
 				<div className="-z-10">
 					<Image
 						src={jakarta}
-						className="h-[140%] w-full object-cover absolute top-0"
+						className="h-[100%] w-full object-cover absolute top-0"
 					/>
-					<div className="bg-black bg-opacity-70 h-[140%] w-full absolute top-0"></div>
+					<div className="bg-black bg-opacity-70 h-[100%] w-full absolute top-0"></div>
 				</div>
-				<section className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 text-center text-white md:w-full">
-					<h2 className="font-header text-5xl mb-12 md:mb-20">
-						What about <span className='text-red-700'>Indo</span>nesia?
+				<section className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white md:w-full">
+					<h2 className="font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-12 md:mb-20">
+						What about <span className="text-red-700">Indo</span>nesia?
 					</h2>
 					<ul className="md:grid md:grid-cols-2">
 						<li className="p-5">
@@ -86,10 +86,10 @@ const Home = () => {
 					</ul>
 				</section>
 				<Image src={waveIndo1} className="absolute -top-1 w-full" />
-				<Image src={waveIndo2} className="absolute -bottom-[14rem] w-full" />
+				<Image src={waveIndo2} className="absolute -bottom-1 w-full" />
 			</section>
-			<section className="bg-brown2 h-screen py-20 text-center font-paragraph ">
-				<Marquee className='' speed={20}>
+			<section className="bg-brown2 h-screen text-center font-paragraph flex items-center">
+				<Marquee className="" speed={20}>
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
@@ -141,22 +141,22 @@ const Home = () => {
 					</section>
 				</Marquee>
 			</section>
-			<section className="h-screen relative mb-40">
+			<section className="h-[110vh] md:h-[130vh] lg:h-[150vh] relative mb-40">
 				<div className="-z-10">
 					<Image
 						src={factory}
-						className="h-[130%] w-full object-cover absolute top-0"
+						className="h-[100%] w-full object-cover absolute top-0"
 					/>
-					<div className="bg-black bg-opacity-70 h-[130%] w-full absolute top-0"></div>
+					<div className="bg-black bg-opacity-70 h-[100%] w-full absolute top-0"></div>
 				</div>
-				<h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 font-header text-5xl w-32 text-center leading-loose">
+				<h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-32 lg:w-64 text-center leading-loose">
 					Do Your Part.
 				</h3>
 				<Image src={waveDYP1} className="absolute -top-1 w-full" />
-				<Image src={waveDYP2} className="absolute -bottom-40 w-full" />
+				<Image src={waveDYP2} className="absolute -bottom-1 w-full" />
 			</section>
 			<section className="text-center">
-				<h2 className="text-green8 font-header text-5xl pt-10 pb-10">
+				<h2 className="text-green8 font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl pt-10 pb-10">
 					What can we do?
 				</h2>
 				<ul className="text-green8 mb-32 ">

@@ -17,7 +17,10 @@ const Counter = () => {
 				desc="Try our Emission Counter to see how much you contribute to overall global emission."
 				image={factory}
 			/>
-			<section className="vechiles_option">
+			<section className="vechiles_option ">
+				<h2 className=" my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
+					See how much do you polute
+				</h2>
 				<button className="vechile_button_1">Car</button>
 				<button className="vechile_button_2">Motorcycle</button>
 				<button className="vechile_button_3">Bus</button>

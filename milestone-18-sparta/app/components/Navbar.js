@@ -41,7 +41,12 @@ const Navbar = () => {
 				<Link href="/" className="">
 					<Image src={logoPotter} />
 				</Link>
-				<button onClick={openMenu}>
+				<ul className="hidden lg:flex lg:gap-44 lg:items-center pr-20">
+					<Link href="/">Home</Link>
+					<Link href="/map">Map</Link>
+					<Link href="/counter">Counter</Link>
+				</ul>
+				<button onClick={openMenu} className="lg:hidden">
 					<Image src={menu} />
 				</button>
 			</section>
