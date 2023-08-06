@@ -12,7 +12,6 @@
 
 
 .vechile_button_1 {
-    height: 20px;
     width: 100px;
     color: #609966;
     font-size: large;
@@ -23,11 +22,11 @@
     cursor:pointer;
     overflow: hidden;  
     border-right: 2px solid #609966;
+    text-align:center;
 }
 
 
 .vechile_button_2 {
-    height: 20px;
     width: 160px;
     color: #609966;
     font-size: large;
@@ -41,7 +40,6 @@
 
 
 .vechile_button_3 {
-    height: 20px;
     width: 100px;
     color: #609966;
     font-size: large;
@@ -54,7 +52,6 @@
     border-left: 2px solid #609966;
 }
 
-
 .passengers_form {
     text-align: center;
     color: #609966;
@@ -63,18 +60,19 @@
     font-weight: bold;
 }
 .passengers_form input {
-    width: 20%;
     height: 30px;
     border-radius: 40px;
     background: #609966;
+    color: white;
     outline: none;
     border: none;
     text-align: center;
+    margin-right: 5rem;
 }
 
 
 .distance_slider {
-    margin-top: 3em;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -82,6 +80,7 @@
 .distance_info {
     color: #609966;
     font-weight: bold;
+    margin-top: 3rem;
 }
 
 
