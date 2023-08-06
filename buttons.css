@@ -1,0 +1,92 @@
+.home-button {
+    width : 168px;
+    height : 44px ;
+    left: 215px;
+    top: 95px;
+    position: absolute;
+    background: #40513B;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    transition: box-shadow 0.15s;
+    color : white;
+    font-size : 20px;
+    font-family : Viga;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align:left;
+
+
+   
+}
+.home-button:hover {
+opacity: 0.7;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
+} 
+
+.home-button:active {
+    opacity: 0.5;
+}
+
+.map-button {
+    width : 168px;
+    height : 44px ;
+    left: 215px;
+    top: 142px;
+    position: absolute;
+    background: #40513B;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    transition: box-shadow 0.15s;
+    color : white;
+    font-size : 20px;
+    font-family : Viga;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align:left;
+
+
+   
+}
+.map-button:hover {
+opacity: 0.7;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
+} 
+
+.map-button:active {
+    opacity: 0.5;
+}
+
+.counter-button {
+    width : 168px;
+    height : 44px ;
+    left: 215px;
+    top: 190px;
+    position: absolute;
+    background: #40513B;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    transition: box-shadow 0.15s;
+    color : white;
+    font-size : 20px;
+    font-family : Viga;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align:left;
+
+
+   
+}
+.counter-button:hover {
+opacity: 0.7;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
+} 
+
+.-counter-button:active {
+    opacity: 0.5;
+}
