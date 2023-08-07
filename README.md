@@ -4,21 +4,28 @@
 ## Potter is a website that helps people in knowing more about air pollution, the air quality in their region, and other stuff that are related to the cause. 
 
 ### This is a milestone made by Team 18 to fulfill the assignment of SPARTA 2022.
-### 1. Ammar Naufal (19622047)
-### 2. Owen Tobias Sinurat (19622270)
-### 3. Imanuel Sebastian Girsang (19622068)
-### 4. Bastian Natanael Sibarani (19622215)
-### 5. Novelya Putri Ramadhani (19622135)
-### 6. Raizan Iqbal Resi (19622029)
-### 7. Zahira Dina Amalia (19622111)
-### 8. Juan Alfred Widjaya (19622073)
-### 9. Jeremy Deandito (19622244)
-### 10. Alvin Fadhilah Akmal (19622020)
-### 11. Farrel Natha Saskoro (19622235)
+### Team 18 members :
+1. Ammar Naufal (19622047)
+2. Owen Tobias Sinurat (19622270)
+3. Imanuel Sebastian Girsang (19622068)
+4. Bastian Natanael Sibarani (19622215)
+5. Novelya Putri Ramadhani (19622135)
+6. Raizan Iqbal Resi (19622029)
+7. Zahira Dina Amalia (19622111)
+8. Juan Alfred Widjaya (19622073)
+9. Jeremy Deandito (19622244)
+10. Alvin Fadhilah Akmal (19622020)
+11. Farrel Natha Saskoro (19622235)
 
-# Milestone 18 Sparta - README
+## Kontribusi Milestone
 
-Welcome to the Milestone 18 Sparta project! This repository contains code and dependencies required to run the project. The project is built using Next.js and utilizes various packages for development, styling, and data fetching. Follow the steps below to get started.
+### Buddies P
+Menyelesaikan bab 1, bab 2, kesimpulan, rangkuman, dan merapikan laporan, daftar isi, dan ideate
+### Buddies M
+Membuat survei melalui google form, empathize, define, ideate, dan merapikan laporan
+### Buddies A
+Membuat Prototype serta merapikan laporan.
+
 
 ## Prerequisites
 
@@ -32,7 +39,7 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/milestone-18-sparta.git
+   git clone https://github.com/owenthe10x/Milestone-SPARTA.git
    ```
 
 2. Navigate to the project directory:
