@@ -14,6 +14,13 @@ const AboutUs = () => {
             kelompok: 'A2',
             imageurl: require("../../public/images/BuddiesA/nuel.jpg"),
         },
+        {
+            id: 2,
+            nama: 'Rayhan Ridhar Rahman',
+            nim: 19622282,
+            kelompok: 'A2',
+            imageurl: require("../../public/images/BuddiesA/Rayhan.jpg"),
+        },
     
     ]
     const BuddiesM = [
