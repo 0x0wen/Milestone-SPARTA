@@ -34,6 +34,13 @@ const AboutUs = () => {
 			nim: 19622073,
 			kelompok: 'A2',
 			imageurl: require('../../public/images/BuddiesA/Juan.jpg'),
+		},
+		{
+			id: 5,
+			nama: 'Serenada Cinta Sunindyo',
+			nim: 19622024,
+			kelompok: 'A2',
+			imageurl: require('../../public/images/BuddiesA/Cinta.jpg'),
 		}
 	]
 	const BuddiesM = [
