@@ -1,7 +1,10 @@
 # Potter
 
 
-## Potter is a website that helps people in knowing more about air pollution, the air quality in their region, and other stuff that are related to the cause. 
+## Description
+Based on the Empathize stage of Design Thinking, it is realized that air quality in the vicinity of Bandung is a serious issue affecting the comfort and health of the community. Although the majority of respondents feel comfortable, some experience discomfort, likely due to air pollution primarily from vehicles. Most are aware of the negative impacts of vehicles, but the understanding is limited to the individual contribution of vehicles. Respondents lack knowledge about AQI and air quality, indicating a need for education. Access to AQI data is limited, making it challenging for the community to take preventive measures. The main problem is to increase awareness of the importance of air quality and provide access to AQI information for appropriate improvement measures in the surrounding environment.
+
+To counter the problems that we have identified, we created Potter. Potter is a website that helps people in knowing more about air pollution, the air quality in their region, and other stuff that are related to the cause. 
 
 ### This is a milestone made by Team 18 to fulfill the assignment of SPARTA 2022.
 ### Team 18 members :
