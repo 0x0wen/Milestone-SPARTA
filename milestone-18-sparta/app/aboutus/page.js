@@ -80,7 +80,7 @@ const AboutUs = () => {
 			nim: 19622235,
 			kelompok: 'P2',
 			imageurl: require('../../public/images/BuddiesP/natha.jpg') 
-		}
+		},
 	]
 
 	return (
