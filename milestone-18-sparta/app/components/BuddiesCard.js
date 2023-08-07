@@ -15,7 +15,7 @@ const BuddiesCard = ({data}) => {
 				<div className="text-center text-xl font-bold font-paragraph text-green-800 break-normal">
 					{data.nama}
 				</div>
-				<div className="text-center text-lg text-green-800 font-subheader font-semibold pt-2 pb-1">
+				<div className="text-center text-lg text-green-800 font-paragraph font-semibold pt-2 pb-1">
 					{data.nim}
 				</div>
 				<div className="text-center text-base text-green-700 font-subheaderitalic mb-2 font-medium">

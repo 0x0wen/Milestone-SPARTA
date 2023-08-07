@@ -88,6 +88,13 @@ const AboutUs = () => {
 			kelompok: 'P2',
 			imageurl: require('../../public/images/BuddiesP/natha.jpg') 
 		},
+		{
+			id:3,
+			nama:"Bastian Natanael Sibarani",
+			nim: 19622215,
+			kelompok: 'P2',
+			imageurl: require('../../public/images/BuddiesP/bastian.jpg')
+		}
 	]
 
 	return (
@@ -112,7 +119,7 @@ const AboutUs = () => {
 			<h2 className="text-center my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
 				Buddies M
 			</h2>
-			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-20">
+			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-20">
 				{BuddiesM.map((buddy) => {
 					return (
 						<center>
@@ -124,7 +131,7 @@ const AboutUs = () => {
 			<h2 className="text-center my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
 				Buddies P
 			</h2>
-			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-20">
+			<div className="justify-center pt-20 mb-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20">
 				{BuddiesP.map((buddy) => {
 					return (
 						<center>
