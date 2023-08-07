@@ -88,6 +88,13 @@ const AboutUs = () => {
 			kelompok: 'P2',
 			imageurl: require('../../public/images/BuddiesP/natha.jpg') 
 		},
+		{
+			id: 3,
+			nama: 'Ammar Naufal',
+			nim: 19622047,
+			kelompok: 'P2',
+			imageurl: require('../../public/images/BuddiesP/Ammar.jpg'),
+		},
 	]
 
 	return (
