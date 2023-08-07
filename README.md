@@ -1,7 +1,7 @@
 # Potter
 
 
-## Potter is a website that helps people in knowing more about air pollution, the air quality in their region, and other stuff that related to the cause. 
+## Potter is a website that helps people in knowing more about air pollution, the air quality in their region, and other stuff that are related to the cause. 
 
 ### This is a milestone made by Team 18 to fulfill the assignment of SPARTA 2022.
 ### 1. Ammar Naufal (19622047)
@@ -13,3 +13,4 @@
 ### 7. Zahira Dina Amalia (19622111)
 ### 8. Juan Alfred Widjaya (19622073)
 ### 9. Jeremy Deandito (19622244)
+### 10. Alvin Fadhilah Akmal (19622020)
