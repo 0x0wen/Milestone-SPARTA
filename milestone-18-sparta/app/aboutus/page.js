@@ -4,7 +4,6 @@ import BuddiesCard from '../components/BuddiesCard';
 import Header from '../components/Header';
 import greenery from '../../public/images/greenery.jpg';
 // Import the image using `require` function
-import nuelImage from '../../public/images/BuddiesA/nuel.jpg';
 
 const AboutUs = () => {
     const BuddiesA = [
