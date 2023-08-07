@@ -66,7 +66,7 @@ Before you begin, ensure you have the following installed on your machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd milestone-18-sparta
+   cd Milestone-SPARTA
    ```
 
 3. Install project dependencies using npm or yarn:
