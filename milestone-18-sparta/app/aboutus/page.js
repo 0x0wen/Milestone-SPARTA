@@ -44,6 +44,13 @@ const AboutUs = () => {
 			kelompok: 'M1',
 			imageurl: require('../../public/images/BuddiesM/novel.jpg'),
 		},
+		{
+			id: 3,
+			nama: 'Raizan Iqbal Resi',
+			nim: 19622029,
+			kelompok: 'M1',
+			imageurl: require('../../public/images/BuddiesM/iqbal.jpg'),
+		},
 	]
 	const BuddiesP = []
 
