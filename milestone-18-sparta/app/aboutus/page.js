@@ -21,6 +21,13 @@ const AboutUs = () => {
 			kelompok: 'A2',
 			imageurl: require('../../public/images/BuddiesA/Rayhan.jpg'),
 		},
+		{
+			id: 3,
+			nama: 'Jeremy Deandito',
+			nim: 19622244,
+			kelompok: 'A2',
+			imageurl: require('../../public/images/BuddiesA/Jeremy.jpg'),
+		}
 	]
 	const BuddiesM = [
 		{
