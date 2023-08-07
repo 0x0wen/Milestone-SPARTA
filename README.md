@@ -12,3 +12,4 @@
 ### 6. Raizan Iqbal Resi (19622029)
 ### 7. Zahira Dina Amalia (19622111)
 ### 8. Juan Alfred Widjaya (19622073)
+### 9. Jeremy Deandito (19622244)
