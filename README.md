@@ -9,3 +9,4 @@
 ### 3. Imanuel Sebastian Girsang (19622068)
 ### 4. Bastian Natanael Sibarani (19622215)
 ### 5. Novelya Putri Ramadhani (19622135)
+### 6. Raizan Iqbal Resi (19622029)
