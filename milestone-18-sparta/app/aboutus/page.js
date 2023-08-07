@@ -27,6 +27,13 @@ const AboutUs = () => {
 			nim: 19622244,
 			kelompok: 'A2',
 			imageurl: require('../../public/images/BuddiesA/Jeremy.jpg'),
+		},
+		{
+			id: 4,
+			nama: 'Juan Alfred Widjaya',
+			nim: 19622073,
+			kelompok: 'A2',
+			imageurl: require('../../public/images/BuddiesA/Juan.jpg'),
 		}
 	]
 	const BuddiesM = [

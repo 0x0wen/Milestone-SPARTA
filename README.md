@@ -11,3 +11,4 @@
 ### 5. Novelya Putri Ramadhani (19622135)
 ### 6. Raizan Iqbal Resi (19622029)
 ### 7. Zahira Dina Amalia (19622111)
+### 8. Juan Alfred Widjaya (19622073)
