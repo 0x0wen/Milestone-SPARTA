@@ -66,7 +66,7 @@ Before you begin, ensure you have the following installed on your machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd milestone-18-sparta
+   cd Milestone-SPARTA
    ```
 
 3. Install project dependencies using npm or yarn:
@@ -131,17 +131,3 @@ This project utilizes several third-party packages for different purposes. Here 
 - **react-fast-marquee**: Component for creating horizontally scrolling content.
 - **react-leaflet**: React components for Leaflet maps integration.
 - **tailwindcss**: CSS framework for building responsive and modern designs.
-
-## Contributing
-
-If you'd like to contribute to this project, feel free to submit issues and pull requests. Make sure to follow the project's coding style and guidelines.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Happy coding! If you encounter any issues or have questions, please don't hesitate to reach out.
-
-*Disclaimer: This README is provided as a template and may need adjustments based on your project's specific requirements.*
