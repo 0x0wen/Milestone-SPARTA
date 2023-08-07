@@ -52,7 +52,15 @@ const AboutUs = () => {
 			imageurl: require('../../public/images/BuddiesM/iqbal.jpg'),
 		},
 	]
-	const BuddiesP = []
+	const BuddiesP = [
+		{
+			id: 1,
+			nama: 'Zahira Dina Amalia',
+			nim: 19622111,
+			kelompok: 'P2',
+			imageurl: require('../../public/images/BuddiesP/hira.jpg'),
+		},
+	]
 
 	return (
 		<>
