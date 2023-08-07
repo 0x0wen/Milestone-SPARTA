@@ -2,7 +2,7 @@
 import React from 'react'
 import BuddiesCard from '../components/BuddiesCard'
 import Header from '../components/Header'
-import greenery from '../../public/images/greenery.jpg'
+import greenery from '../../public/images/work.webp'
 // Import the image using `require` function
 
 const AboutUs = () => {
@@ -94,7 +94,14 @@ const AboutUs = () => {
 			nim: 19622215,
 			kelompok: 'P2',
 			imageurl: require('../../public/images/BuddiesP/bastian.jpg')
-		}
+		},
+		{
+			id: 4,
+			nama: 'Ammar Naufal',
+			nim: 19622047,
+			kelompok: 'P2',
+			imageurl: require('../../public/images/BuddiesP/Ammar.jpeg'),
+		},
 	]
 
 	return (
@@ -116,8 +123,8 @@ const AboutUs = () => {
 					)
 				})}
 			</div>
-			<h2 className="text-center my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
-				Buddies M
+			<h2 className="text-center mt-20 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
+				Buddies M1
 			</h2>
 			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-20">
 				{BuddiesM.map((buddy) => {
@@ -128,8 +135,8 @@ const AboutUs = () => {
 					)
 				})}
 			</div>
-			<h2 className="text-center my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
-				Buddies P
+			<h2 className="text-center mt-20 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
+				Buddies P2
 			</h2>
 			<div className="justify-center pt-20 mb-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20">
 				{BuddiesP.map((buddy) => {

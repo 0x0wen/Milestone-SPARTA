@@ -9,7 +9,7 @@ const Footer = () => {
 		<footer className="relative">
 			<Image src={waveFooter} alt="" className="w-full" />
 			<section className="bg-green1 text-white font-paragraph -mt-1 py-5">
-				<ul className="grid grid-cols-3 self-center md:text-xl">
+				<ul className="grid grid-cols-4 self-center md:text-xl">
 					<li className="text-center">
 						<Link href="/">Home</Link>
 					</li>
@@ -18,6 +18,9 @@ const Footer = () => {
 					</li>
 					<li className="text-center">
 						<Link href="/counter">Counter</Link>
+					</li>
+					<li className="text-center">
+						<Link href="/aboutus">About Us</Link>
 					</li>
 				</ul>
 				<h3 className="text-white text-center font-subheader text-3xl mt-5 md:text-5xl">
