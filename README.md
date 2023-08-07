@@ -19,8 +19,10 @@ To counter the problems that we have identified, we created Potter. Potter is a 
 9. Jeremy Deandito (19622244)
 10. Alvin Fadhilah Akmal (19622020)
 11. Farrel Natha Saskoro (19622235)
+12. Serenada Cinta Sunindyo (19622024)
+13. Rayhan Ridhar Rahman (19622282)
 
-## Kontribusi Milestone
+## Milestone Contributions
 
 ### Buddies P
 Menyelesaikan bab 1, bab 2, kesimpulan, rangkuman, dan merapikan laporan, daftar isi, dan ideate
@@ -29,6 +31,22 @@ Membuat survei melalui google form, empathize, define, ideate, dan merapikan lap
 ### Buddies A
 Membuat Prototype serta merapikan laporan.
 
+### Technical Developer
+1. Owen Tobias Sinurat (19622270)
+2. Imanuel Sebastian Girsang (19622068)
+
+### Mengisi Page 'About Us' 
+1. Ammar Naufal (19622047)
+2. Bastian Natanael Sibarani (19622215)
+3. Novelya Putri Ramadhani (19622135)
+4. Raizan Iqbal Resi (19622029)
+5. Zahira Dina Amalia (19622111)
+6. Juan Alfred Widjaya (19622073)
+7. Jeremy Deandito (19622244)
+8. Alvin Fadhilah Akmal (19622020)
+9. Farrel Natha Saskoro (19622235)
+10. Serenada Cinta Sunindyo (19622024)
+11. Rayhan Ridhar Rahman (19622282)
 
 ## Prerequisites
 
