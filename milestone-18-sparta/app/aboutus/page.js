@@ -30,6 +30,13 @@ const AboutUs = () => {
 			kelompok: 'M1',
 			imageurl: require('../../public/images/BuddiesM/owen.jpg'),
 		},
+		{
+			id: 2,
+			nama: 'Novelya Putri Ramadhani',
+			nim: 19622135,
+			kelompok: 'M1',
+			imageurl: require('../../public/images/BuddiesM/novel.jpg'),
+		},
 	]
 	const BuddiesP = []
 
