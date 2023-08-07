@@ -45,6 +45,7 @@ const Navbar = () => {
 					<Link href="/">Home</Link>
 					<Link href="/map">Map</Link>
 					<Link href="/counter">Counter</Link>
+					<Link href="/aboutus">About Us</Link>
 				</ul>
 				<button onClick={openMenu} className="lg:hidden">
 					<Image src={menu} />

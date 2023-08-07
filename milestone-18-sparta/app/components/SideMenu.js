@@ -42,6 +42,14 @@ const SideMenu = (props) => {
 						Counter
 					</Link>
 				</li>
+				<li className="w-full py-5">
+					<Link
+						className="pl-5 h-full w-full pr-16 py-5 font-paragraph font-bold sm:pr-40 md:pr-72 lg:pr-80"
+						href="/aboutus"
+					>
+						About Us
+					</Link>
+				</li>
 				<section className="absolute bottom-0 bg-green8 h-20 w-40 sm:w-64 md:w-96">
 					<Image src={potter} alt="Potter logo" className="h-20 mx-auto" />
 				</section>
