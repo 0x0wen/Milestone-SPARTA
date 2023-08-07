@@ -58,6 +58,13 @@ const AboutUs = () => {
 			kelompok: 'M1',
 			imageurl: require('../../public/images/BuddiesM/iqbal.jpg'),
 		},
+		{
+			id: 4,
+			nama: 'Alvin Fadhilah Akmal',
+			nim: 19622020,
+			kelompok: 'M1',
+			imageurl: require('../../public/images/BuddiesM/Alvin.jpg'),
+		},
 	]
 	const BuddiesP = [
 		{
