@@ -41,7 +41,7 @@ const AboutUs = () => {
 			nim: 19622024,
 			kelompok: 'A2',
 			imageurl: require('../../public/images/BuddiesA/Cinta.jpg'),
-		}
+		},
 	]
 	const BuddiesM = [
 		{
@@ -86,14 +86,14 @@ const AboutUs = () => {
 			nama: 'Farrel Natha Saskoro',
 			nim: 19622235,
 			kelompok: 'P2',
-			imageurl: require('../../public/images/BuddiesP/natha.jpg') 
+			imageurl: require('../../public/images/BuddiesP/natha.jpg'),
 		},
 		{
-			id:3,
-			nama:"Bastian Natanael Sibarani",
+			id: 3,
+			nama: 'Bastian Natanael Sibarani',
 			nim: 19622215,
 			kelompok: 'P2',
-			imageurl: require('../../public/images/BuddiesP/bastian.jpg')
+			imageurl: require('../../public/images/BuddiesP/bastian.jpg'),
 		},
 		{
 			id: 4,
@@ -117,7 +117,7 @@ const AboutUs = () => {
 			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-20">
 				{BuddiesA.map((buddy) => {
 					return (
-						<center>
+						<center key={1}>
 							<BuddiesCard key={buddy.id} data={buddy} />
 						</center>
 					)
@@ -129,7 +129,7 @@ const AboutUs = () => {
 			<div className="justify-center pt-20  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-20">
 				{BuddiesM.map((buddy) => {
 					return (
-						<center>
+						<center key={2}>
 							<BuddiesCard key={buddy.id} data={buddy} />
 						</center>
 					)
@@ -141,7 +141,7 @@ const AboutUs = () => {
 			<div className="justify-center pt-20 mb-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20">
 				{BuddiesP.map((buddy) => {
 					return (
-						<center>
+						<center key={3}>
 							<BuddiesCard key={buddy.id} data={buddy} />
 						</center>
 					)

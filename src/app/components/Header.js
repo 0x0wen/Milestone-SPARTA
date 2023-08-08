@@ -7,6 +7,7 @@ const Header = (props) => {
 				<Image
 					src={props.image}
 					className="h-[100%] w-full object-cover absolute  top-0"
+					alt=""
 				/>
 				<div className="bg-black bg-opacity-60 h-[100%] w-full absolute top-0"></div>
 			</div>
@@ -14,7 +15,7 @@ const Header = (props) => {
 				<h1 className="font-header text-5xl lg:text-7xl ">{props.header}</h1>
 				<p className="font-paragraph text-slate-200">{props.desc}</p>
 			</section>
-			<Image src={waveHeader} className="absolute -bottom-1 w-full" />
+			<Image src={waveHeader} className="absolute -bottom-1 w-full" alt=""/>
 		</header>
 	)
 }

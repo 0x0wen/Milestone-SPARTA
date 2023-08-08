@@ -56,6 +56,7 @@ const Home = () => {
 					<Image
 						src={jakarta}
 						className="h-[100%] w-full object-cover absolute top-0"
+						alt=""
 					/>
 					<div className="bg-black bg-opacity-70 h-[100%] w-full absolute top-0"></div>
 				</div>
@@ -85,8 +86,8 @@ const Home = () => {
 						</li>
 					</ul>
 				</section>
-				<Image src={waveIndo1} className="absolute -top-1 w-full" />
-				<Image src={waveIndo2} className="absolute -bottom-1 w-full" />
+				<Image src={waveIndo1} className="absolute -top-1 w-full" alt="" />
+				<Image src={waveIndo2} className="absolute -bottom-1 w-full" alt="" />
 			</section>
 			<section className="bg-brown2 h-screen text-center font-paragraph flex items-center">
 				<Marquee className="" speed={20}>
@@ -146,14 +147,15 @@ const Home = () => {
 					<Image
 						src={factory}
 						className="h-[100%] w-full object-cover absolute top-0"
+						alt=""
 					/>
 					<div className="bg-black bg-opacity-70 h-[100%] w-full absolute top-0"></div>
 				</div>
 				<h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-32 lg:w-64 text-center leading-loose">
 					Do Your Part.
 				</h3>
-				<Image src={waveDYP1} className="absolute -top-1 w-full" />
-				<Image src={waveDYP2} className="absolute -bottom-1 w-full" />
+				<Image src={waveDYP1} className="absolute -top-1 w-full" alt="" />
+				<Image src={waveDYP2} className="absolute -bottom-1 w-full" alt="" />
 			</section>
 			<section className="text-center">
 				<h2 className="text-green8 font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl pt-10 pb-10">
@@ -161,7 +163,7 @@ const Home = () => {
 				</h2>
 				<ul className="text-green8 mb-32 ">
 					<li className="flex flex-wrap justify-center items-center mb-10">
-						<Image src={transport} />
+						<Image src={transport} alt="" />
 						<section className="w-80 md:mx-6">
 							<h3 className="font-subheader text-2xl">
 								Use public transportation
@@ -172,7 +174,7 @@ const Home = () => {
 						</section>
 					</li>
 					<li className="flex flex-wrap justify-center items-center mb-10">
-						<Image src={recycle} className="md:order-last" />
+						<Image src={recycle} className="md:order-last" alt="" />
 						<section className="w-80 md:mx-6">
 							<h3 className="font-subheader text-2xl">Recycle and reuse</h3>
 							<p className="font-paragraph">
@@ -182,7 +184,7 @@ const Home = () => {
 						</section>
 					</li>
 					<li className="flex flex-wrap justify-center items-center mb-10">
-						<Image src={burn} />
+						<Image src={burn} alt="" />
 						<section className="w-80 md:mx-6">
 							<h3 className="font-subheader text-2xl">Stop waste burning</h3>
 							<p className="font-paragraph">
