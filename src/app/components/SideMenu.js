@@ -15,7 +15,7 @@ const SideMenu = (props) => {
 						className="right-4 top-2 hover:bg-slate-400"
 						onClick={props.onClick}
 					>
-						<Image src={close} />
+						<Image src={close}  alt=""/>
 					</button>
 				</section>
 				<li className="w-full py-5">

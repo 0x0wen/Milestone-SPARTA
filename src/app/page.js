@@ -1,5 +1,3 @@
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Header from './components/Header'
 import greenery from '../public/images/greenery.jpg'
 import Image from 'next/image'
@@ -94,8 +92,8 @@ const Home = () => {
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-								“Preserve and cherish the pale blue dot, the only home we've
-								ever known.”
+								&quot;Preserve and cherish the pale blue dot, the only home
+								we&apos;ve ever known.&quot;
 							</p>
 							<h3 className="text-2xl font-extrabold ">Carl Sagan</h3>
 							<p className="text-green8 opacity-70 ">Astronomer</p>
@@ -104,8 +102,8 @@ const Home = () => {
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="my-auto">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-								“You can start changing the world for the better daily - no
-								matter how small the action.”
+								&quot;You can start changing the world for the better daily - no
+								matter how small the action.&quot;
 							</p>
 							<h3 className="text-2xl font-extrabold">Nelson Mandela</h3>
 							<p className="text-green8 opacity-70">Politician</p>
@@ -114,7 +112,8 @@ const Home = () => {
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="my-auto">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-								“The Earth does not belong to us: we belong to the Earth.”
+								&quot;The Earth does not belong to us: we belong to the
+								Earth.&quot;
 							</p>
 							<h3 className="text-2xl font-extrabold">Marlee Matlin</h3>
 							<p className="text-green8 opacity-70">Activist</p>
@@ -123,8 +122,8 @@ const Home = () => {
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="my-auto">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-								“We are living on this planet as if we had another one to go
-								to.”
+								&quot;We are living on this planet as if we had another one to
+								go to.&quot;
 							</p>
 							<h3 className="text-2xl font-extrabold">Terri Swearingen</h3>
 							<p className="text-green8 opacity-70">Nurse</p>
@@ -133,8 +132,8 @@ const Home = () => {
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="my-auto">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">
-								“We shall require a substantially new manner of thinking if
-								mankind is to survive.”
+								&quot;We shall require a substantially new manner of thinking if
+								mankind is to survive.&quot;
 							</p>
 							<h3 className="text-2xl font-extrabold">Albert Einstein</h3>
 							<p className="text-green8 opacity-70">Physicist</p>

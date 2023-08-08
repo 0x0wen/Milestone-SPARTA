@@ -39,7 +39,7 @@ const Navbar = () => {
 				}`}
 			>
 				<Link href="/" className="">
-					<Image src={logoPotter} />
+					<Image src={logoPotter} alt=""/>
 				</Link>
 				<ul className="hidden lg:flex lg:gap-44 lg:items-center pr-20">
 					<Link href="/">Home</Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
 					<Link href="/aboutus">About Us</Link>
 				</ul>
 				<button onClick={openMenu} className="lg:hidden">
-					<Image src={menu} />
+					<Image src={menu}  alt=""/>
 				</button>
 			</section>
 			{menuOpen && <SideMenu onClick={closeMenu} />}
