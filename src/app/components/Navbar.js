@@ -16,17 +16,21 @@ const Navbar = () => {
 		setMenuOpen(false)
 	}
 	useEffect(() => {
-		window.addEventListener('scroll', changeBackground)
-		return () => {
-			window.removeEventListener('scroll', changeBackground)
+		if (typeof window !== 'undefined') {
+			window.addEventListener('scroll', changeBackground)
+			return () => {
+				window.removeEventListener('scroll', changeBackground)
+			}
 		}
 	}, [])
 
 	const changeBackground = () => {
-		if (window.scrollY >= 80) {
-			setNavbar(true)
-		} else {
-			setNavbar(false)
+		if (typeof window !== 'undefined') {
+			if (window.scrollY >= 80) {
+				setNavbar(true)
+			} else {
+				setNavbar(false)
+			}
 		}
 	}
 	return (
@@ -39,7 +43,7 @@ const Navbar = () => {
 				}`}
 			>
 				<Link href="/" className="">
-					<Image src={logoPotter} alt=""/>
+					<Image src={logoPotter} alt="" />
 				</Link>
 				<ul className="hidden lg:flex lg:gap-44 lg:items-center pr-20">
 					<Link href="/">Home</Link>
@@ -48,7 +52,7 @@ const Navbar = () => {
 					<Link href="/aboutus">About Us</Link>
 				</ul>
 				<button onClick={openMenu} className="lg:hidden">
-					<Image src={menu}  alt=""/>
+					<Image src={menu} alt="" />
 				</button>
 			</section>
 			{menuOpen && <SideMenu onClick={closeMenu} />}
