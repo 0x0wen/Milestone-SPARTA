@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 export default function Scroll({ colored, transparent }) {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if ((typeof window !== 'undefined') || (typeof window !== 'null')) {
       function changeNavbar() {
         if (window.scrollY >= 80) {
           colored();
