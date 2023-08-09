@@ -8,7 +8,7 @@ const MapClient = () => {
   const mapRef = useRef(null);
   const [aqi, setAqi] = useState()
   const [data, setData] = useState({})
-  let map; // Define map in an accessible scope
+  const mapInstance = useRef(null);
   const getcolor = (level) => {
     if (level == 1)
       return ("bg-[#A7FFBA]")
@@ -23,10 +23,10 @@ const MapClient = () => {
   }
   useEffect(() => {
     // Create the map and specify its center and initial zoom level
-    map = L.map(mapRef.current).setView([-6.891480, 107.610657], 50);
+    mapInstance.current = L.map(mapRef.current).setView([-6.891480, 107.610657], 50);
 
     // Add the tile layer (map tiles) to the map using OpenStreetMap as the map provider
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapInstance.current);
     const popup = L.popup();
     const getAqi = async (lat, lng) => {
       const res = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=8890989f5a9f387eec556f48518adac3`)
@@ -58,15 +58,15 @@ const MapClient = () => {
             ` is ` +
             aqi
           )
-          .openOn(map);
+          .openOn(mapInstance.current);
       } catch (error) {
         console.error('Error fetching air quality data:', error);
       }
     }
 
-    map.on('click', onMapClick);
+    mapInstance.current.on('click', onMapClick);
     // Return a cleanup function to remove the map when the component unmounts
-    return () => map.remove();
+    return () => mapInstance.current.remove();
   }, []);
 
 
