@@ -4,7 +4,7 @@ import Image from 'next/image'
 import menu from '../../public/icons/menu.svg'
 import logoPotter from '../../public/images/logoPotter.svg'
 import SideMenu from './SideMenu'
-import {useState, useCallback} from 'react'
+import { useState, useCallback } from 'react'
 import Scroll from './Scroll'
 
 const Navbar = () => {
@@ -27,11 +27,10 @@ const Navbar = () => {
 		<nav className="fixed z-[99999]">
 			<Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />
 			<section
-				className={` ${
-					navbar
+				className={` ${navbar
 						? 'w-screen flex justify-between px-3 md:px-4 lg:px-5 bg-green6'
 						: 'bg-transparent w-screen flex justify-between px-3 md:px-4 lg:px-5'
-				}`}
+					}`}
 			>
 				<Link href="/" className="">
 					<Image src={logoPotter} alt="" />

@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 
 const MapClient = () => {
-  const mapRef = useRef(null);
   const [aqi, setAqi] = useState()
   const [data, setData] = useState({})
   const mapInstance = useRef(null);
@@ -22,15 +21,16 @@ const MapClient = () => {
       return ("bg-[#B461C2]")
   }
   useEffect(() => {
+    if (typeof window!=='undefined'){
     // Create the map and specify its center and initial zoom level
-    mapInstance.current = L.map(mapRef.current).setView([-6.891480, 107.610657], 50);
+    mapInstance.current = L.map(mapInstance.current).setView([-6.891480, 107.610657], 50);
 
     // Add the tile layer (map tiles) to the map using OpenStreetMap as the map provider
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapInstance.current);
     const popup = L.popup();
     const getAqi = async (lat, lng) => {
       const res = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=8890989f5a9f387eec556f48518adac3`)
-      console.log(res.data)
+      
       setAqi(Number(res.data.list[0].main.aqi))
       setData(res.data.list[0].components)
       return (
@@ -39,11 +39,9 @@ const MapClient = () => {
     }
     const getLocation = async (lat, lng) => {
       const res = await axios.get(`https://api.geoapify.com/v1/geocode/reverse?lat=${lat}&lon=${lng}&apiKey=8d59f4675db549ed82273b8539d735d6`)
-
       const addressline1 = res.data.features[0].properties.address_line1
       const addressline2 = res.data.features[0].properties.address_line2
       const sendfull = [addressline1, addressline2]
-
       return (sendfull)
     }
     async function onMapClick(e) {
@@ -66,7 +64,11 @@ const MapClient = () => {
 
     mapInstance.current.on('click', onMapClick);
     // Return a cleanup function to remove the map when the component unmounts
-    return () => mapInstance.current.remove();
+    return () =>{
+      if (mapInstance.current) {
+        mapInstance.current.remove();
+      }
+    };}
   }, []);
 
 
@@ -266,7 +268,7 @@ const MapClient = () => {
       <div className="flex  justify-center pt-[6rem] px-5">
 
         <div className="w-[400px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[800px] lg:h-[600px]  bg-gray-300 rounded-md overflow-hidden">
-          <div ref={mapRef} style={{ width: '100%', height: '100%' }} >
+          <div ref={mapInstance} style={{ width: '100%', height: '100%' }} >
 
           </div>
         </div>

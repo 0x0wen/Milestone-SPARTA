@@ -1,6 +1,9 @@
-import MapClient from './clientpage'
 import map from '../../public/images/map.webp'
 import Header from '../components/Header'
+import dynamic from 'next/dynamic';
+const MapWithNoSSR = dynamic(() => import("./clientpage"), {
+    ssr: false
+  });
 const MapPage = () => {
 	return (
 		<>
@@ -14,8 +17,8 @@ const MapPage = () => {
 					Click anywhere on the map to see the AQI of your location
 				</h2>
 
-				<MapClient />
-			</section>
+				<MapWithNoSSR />
+	</section>
 		</>
 	)
 }
