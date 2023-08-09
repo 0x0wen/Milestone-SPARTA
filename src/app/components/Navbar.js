@@ -4,36 +4,28 @@ import Image from 'next/image'
 import menu from '../../public/icons/menu.svg'
 import logoPotter from '../../public/images/logoPotter.svg'
 import SideMenu from './SideMenu'
-import {useState, useEffect} from 'react'
+import {useState, useCallback} from 'react'
+import Scroll from './Scroll'
 
 const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [navbar, setNavbar] = useState(false)
+	const setColoredNavbar = useCallback(() => {
+		setNavbar(true)
+	}, [])
+
+	const setTransparentNavbar = useCallback(() => {
+		setNavbar(false)
+	}, [])
 	const openMenu = () => {
 		setMenuOpen(true)
 	}
 	const closeMenu = () => {
 		setMenuOpen(false)
 	}
-	useEffect(
-		(changeNavbar = () => {
-			if (window.scrollY >= 80) {
-				setNavbar(true)
-			} else {
-				setNavbar(false)
-			}
-		})
-	)
-
-	useEffect(() => {
-		window.addEventListener('scroll', changeNavbar)
-		return () => {
-			window.removeEventListener('scroll', changeNavbar)
-		}
-	}, [])
-
 	return (
 		<nav className="fixed z-[99999]">
+			<Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />
 			<section
 				className={` ${
 					navbar
