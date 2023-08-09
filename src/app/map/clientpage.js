@@ -22,6 +22,7 @@ const MapClient = () => {
       return ("bg-[#B461C2]")
   }
   useEffect(() => {
+    if (typeof window!=='undefined'){
     // Create the map and specify its center and initial zoom level
     mapInstance.current = L.map(mapInstance.current).setView([-6.891480, 107.610657], 50);
 
@@ -70,7 +71,7 @@ const MapClient = () => {
       if (mapInstance.current) {
         mapInstance.current.remove();
       }
-    };
+    };}
   }, []);
 
 
