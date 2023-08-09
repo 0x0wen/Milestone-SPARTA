@@ -30,7 +30,7 @@ const MapClient = () => {
     const popup = L.popup();
     const getAqi = async (lat, lng) => {
       const res = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=8890989f5a9f387eec556f48518adac3`)
-      console.log(res.data)
+      
       setAqi(Number(res.data.list[0].main.aqi))
       setData(res.data.list[0].components)
       return (
@@ -39,11 +39,9 @@ const MapClient = () => {
     }
     const getLocation = async (lat, lng) => {
       const res = await axios.get(`https://api.geoapify.com/v1/geocode/reverse?lat=${lat}&lon=${lng}&apiKey=8d59f4675db549ed82273b8539d735d6`)
-
       const addressline1 = res.data.features[0].properties.address_line1
       const addressline2 = res.data.features[0].properties.address_line2
       const sendfull = [addressline1, addressline2]
-
       return (sendfull)
     }
     async function onMapClick(e) {

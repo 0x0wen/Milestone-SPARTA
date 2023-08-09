@@ -1,7 +1,10 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar'
+import dynamic from 'next/dynamic'
 import Footer from './components/Footer'
+const DynamicNavbar = dynamic(() => import('./components/Navbar'), {
+  ssr: false,
+})
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <div className="bg-green4 min-w-screen min-h-screen">
-      <Navbar/>
+      <DynamicNavbar/>
       {children}
       <Footer /></div></body>
     </html>
