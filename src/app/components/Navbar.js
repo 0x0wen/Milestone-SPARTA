@@ -15,24 +15,23 @@ const Navbar = () => {
 	const closeMenu = () => {
 		setMenuOpen(false)
 	}
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			window.addEventListener('scroll', changeBackground)
-			return () => {
-				window.removeEventListener('scroll', changeBackground)
-			}
-		}
-	}, [])
-
-	const changeBackground = () => {
-		if (typeof window !== 'undefined') {
+	useEffect(
+		(changeNavbar = () => {
 			if (window.scrollY >= 80) {
 				setNavbar(true)
 			} else {
 				setNavbar(false)
 			}
+		})
+	)
+
+	useEffect(() => {
+		window.addEventListener('scroll', changeNavbar)
+		return () => {
+			window.removeEventListener('scroll', changeNavbar)
 		}
-	}
+	}, [])
+
 	return (
 		<nav className="fixed z-[99999]">
 			<section
