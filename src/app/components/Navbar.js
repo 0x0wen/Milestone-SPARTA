@@ -25,7 +25,7 @@ const Navbar = () => {
 	}
 	return (
 		<nav className="fixed z-[99999]">
-			{/*<Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />*/}
+			<Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />
 			<section
 				className={` ${navbar
 						? 'w-screen flex justify-between px-3 md:px-4 lg:px-5 bg-green6'

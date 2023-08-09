@@ -1,11 +1,11 @@
-'use client'
+/*'use client'
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 
 const MapClient = () => {
-  const mapRef = useRef(null);
+  
   const [aqi, setAqi] = useState()
   const [data, setData] = useState({})
   const mapInstance = useRef(null);
@@ -23,7 +23,7 @@ const MapClient = () => {
   }
   useEffect(() => {
     // Create the map and specify its center and initial zoom level
-    mapInstance.current = L.map(mapRef.current).setView([-6.891480, 107.610657], 50);
+    mapInstance.current = L.map(mapInstance.current).setView([-6.891480, 107.610657], 50);
 
     // Add the tile layer (map tiles) to the map using OpenStreetMap as the map provider
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapInstance.current);
@@ -66,7 +66,11 @@ const MapClient = () => {
 
     mapInstance.current.on('click', onMapClick);
     // Return a cleanup function to remove the map when the component unmounts
-    return () => mapInstance.current.remove();
+    return () =>{
+      if (mapInstance.current) {
+        mapInstance.current.remove();
+      }
+    };
   }, []);
 
 
@@ -266,7 +270,7 @@ const MapClient = () => {
       <div className="flex  justify-center pt-[6rem] px-5">
 
         <div className="w-[400px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[800px] lg:h-[600px]  bg-gray-300 rounded-md overflow-hidden">
-          <div ref={mapRef} style={{ width: '100%', height: '100%' }} >
+          <div ref={mapInstance} style={{ width: '100%', height: '100%' }} >
 
           </div>
         </div>
@@ -338,4 +342,4 @@ const MapClient = () => {
   );
 };
 
-export default MapClient;
+export default MapClient;*/

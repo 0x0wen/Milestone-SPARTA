@@ -1,4 +1,4 @@
-/*'use client'
+'use client'
 import { useEffect } from 'react';
 
 export default function Scroll({ colored, transparent }) {
@@ -19,4 +19,4 @@ export default function Scroll({ colored, transparent }) {
   }, [colored, transparent]);
 
   return null;
-}*/
+}
