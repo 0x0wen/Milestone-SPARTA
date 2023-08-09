@@ -29,7 +29,7 @@ const MapClient = () => {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapInstance.current);
     const popup = L.popup();
     const getAqi = async (lat, lng) => {
-      const res = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=8890989f5a9f387eec556f48518adac3`)
+      const res = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=8890989f5a9f387eec556f48518adac3`)
       
       setAqi(Number(res.data.list[0].main.aqi))
       setData(res.data.list[0].components)
