@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 
 const MapClient = () => {
-  
   const [aqi, setAqi] = useState()
   const [data, setData] = useState({})
   const mapInstance = useRef(null);
