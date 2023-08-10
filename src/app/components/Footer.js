@@ -11,16 +11,20 @@ const Footer = () => {
 			<section className="bg-green1 text-white font-paragraph -mt-1 py-5">
 				<ul className="grid grid-cols-4 self-center md:text-xl">
 					<li className="text-center">
-						<Link href="/">Home</Link>
+						<Link href="/" className='hover:text-black hover:font-boldF
+            transition font-paragraph'> Home</Link>
 					</li>
 					<li className="text-center">
-						<Link href="/map">Map</Link>
+						<Link href="/map" className='hover:text-black hover:font-boldF
+            transition font-paragraph'>Map</Link>
 					</li>
 					<li className="text-center">
-						<Link href="/counter">Counter</Link>
+						<Link href="/counter" className='hover:text-black hover:font-boldF
+            transition font-paragraph'>Counter</Link>
 					</li>
 					<li className="text-center">
-						<Link href="/aboutus">About Us</Link>
+						<Link href="/aboutus" className='hover:text-black hover:font-boldF
+            transition font-paragraph'>About Us</Link>
 					</li>
 				</ul>
 				<h3 className="text-white text-center font-subheader text-3xl mt-5 md:text-5xl">
