@@ -30,16 +30,15 @@ const CounterClient = () => {
 			return (distance * 103) / passengers
 		}
 	}
-	const gradientBackground = `linear-gradient(to right, #E1ECC8 ${distance}%, #609966 ${distance}%)`;
 	return (
 		<section>
 			<section className="vechiles_option ">
 				<h2 className="my-10 mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
 					See how much do you pollute
 				</h2>
-				<button className="vechile_button_1 py-5 " onClick={() => setVehicle("Car")}>Car</button>
-				<button className="vechile_button_2 py-5" onClick={() => setVehicle("Motorcycle")}>Motorcycle</button>
-				<button className="vechile_button_3 py-5" onClick={() => setVehicle("Bus")}>Bus</button>
+				<button className={`vechile_button_1 py-5  hover:text-green8 ${vehicle=="Car"?("text-green8"):("text-[#609966]")} transition`} onClick={() => setVehicle("Car")}>Car</button>
+				<button className={`vechile_button_2 py-5 hover:text-green8 ${vehicle=="Motorcycle"?("text-green8"):("text-[#609966]")} transition`} onClick={() => setVehicle("Motorcycle")}>Motorcycle</button>
+				<button className={`vechile_button_3 py-5 hover:text-green8 ${vehicle=="Bus"?("text-green8"):("text-[#609966]")} transition`} onClick={() => setVehicle("Bus")}>Bus</button>
 			</section>
 			<form className="distance_forms">
 				<div className="passengers_form">

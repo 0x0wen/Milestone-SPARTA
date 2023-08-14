@@ -28,18 +28,22 @@ const Navbar = () => {
 			<Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />
 			<section
 				className={` ${navbar
-						? 'w-screen flex justify-between px-3 md:px-4 lg:px-5 bg-green6'
-						: 'bg-transparent w-screen flex justify-between px-3 md:px-4 lg:px-5'
+					? 'w-screen flex justify-between px-3 md:px-4 lg:px-5 bg-green6'
+					: 'bg-transparent w-screen flex justify-between px-3 md:px-4 lg:px-5'
 					}`}
 			>
 				<Link href="/" className="">
 					<Image src={logoPotter} alt="" />
 				</Link>
 				<ul className="hidden lg:flex lg:gap-44 lg:items-center pr-20">
-					<Link href="/">Home</Link>
-					<Link href="/map">Map</Link>
-					<Link href="/counter">Counter</Link>
-					<Link href="/aboutus">About Us</Link>
+					<Link href="/" className='hover:text-black hover:font-bold
+            transition font-paragraph'>Home</Link>
+					<Link href="/map " className='hover:text-black hover:font-bold
+            transition font-paragraph'>Map</Link>
+					<Link href="/counter" className='hover:text-black hover:font-bold
+            transition font-paragraph'>Counter</Link>
+					<Link href="/aboutus" className='hover:text-black hover:font-bold
+            transition font-paragraph'>About Us</Link>
 				</ul>
 				<button onClick={openMenu} className="lg:hidden">
 					<Image src={menu} alt="" />

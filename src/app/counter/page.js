@@ -1,6 +1,3 @@
-
-
-
 import Header from '../components/Header'
 import factory from '../../public/images/factory.jpg'
 import './counter.css'
