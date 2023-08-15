@@ -1,3 +1,4 @@
+'use client'
 import Header from './components/Header'
 import greenery from '../public/images/greenery.jpg'
 import Image from 'next/image'
@@ -11,7 +12,13 @@ import transport from '../public/images/transport.png'
 import recycle from '../public/images/recycle.png'
 import burn from '../public/images/burn.png'
 import Marquee from 'react-fast-marquee'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 const Home = () => {
+	useEffect(() => {
+		AOS.init()
+	}, [])
 	return (
 		<>
 			<Header
@@ -19,7 +26,7 @@ const Home = () => {
 				desc="It starts with you."
 				image={greenery}
 			/>
-			<section className="min-h-screen text-green8 font-paragraph font-bold text-center md:mt-0 flex justify-center items-center">
+			<section data-aos="fade-up" className="min-h-screen text-green8 font-paragraph font-bold text-center md:mt-0 flex justify-center items-center">
 				<div className="md:my-auto">
 					<h2 className=" mx-5 text-green7 font-bold font-subheader text-5xl sm:text-6xl md:text-7xl lg:text-8xl md:mb-10">
 						Did you know?
@@ -49,7 +56,7 @@ const Home = () => {
 					</ul>
 				</div>
 			</section>
-			<section className="min-h-[110vh] md:min-h-[130vh] lg:min-h-[150vh] relative">
+			<section data-aos="fade-up" className="min-h-[110vh] md:min-h-[130vh] lg:min-h-[150vh] relative">
 				<div className="-z-10">
 					<Image
 						src={jakarta}
@@ -87,8 +94,8 @@ const Home = () => {
 				<Image src={waveIndo1} className="absolute -top-1 w-full" alt="" />
 				<Image src={waveIndo2} className="absolute -bottom-1 w-full" alt="" />
 			</section>
-			<section className="bg-brown2 h-screen text-center font-paragraph flex items-center">
-				<Marquee className="" speed={20}>
+			<section className=" bg-brown2 h-screen text-center font-paragraph flex items-center">
+				<Marquee className="overflow-hidden" speed={20}>
 					<section className="bg-green4 text-green8 w-72 aspect-[3/4] rounded-3xl flex items-center mx-5">
 						<div className="">
 							<p className="font-paragraphitalic text-3xl  pb-5 px-10">

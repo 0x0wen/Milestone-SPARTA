@@ -3,8 +3,13 @@ import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const MapClient = () => {
+  useEffect(() => {
+		AOS.init()
+	}, [])
   const [aqi, setAqi] = useState()
   const [data, setData] = useState({})
   const mapInstance = useRef(null);
@@ -75,7 +80,7 @@ const MapClient = () => {
 
   return (
     <>
-    <table className=' border-2 border-slate-950 mx-auto text-xs sm:text-sm md:text-md lg:text-2xl hidden md:table'>
+    <table data-aos='fade-up' className=' border-2 border-slate-950 mx-auto text-xs sm:text-sm md:text-md lg:text-2xl hidden md:table'>
         <thead className='bg-[#A0C49D] text-black'>
           <tr>
             <th className='p-3 border-2 border-slate-950' rowspan={2}>AQI Level</th>
