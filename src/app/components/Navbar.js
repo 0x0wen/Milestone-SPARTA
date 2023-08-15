@@ -49,7 +49,7 @@ const Navbar = () => {
 					<Image src={menu} alt="" />
 				</button>
 			</section>
-			{menuOpen && <SideMenu onClick={closeMenu} />}
+			{menuOpen && <SideMenu onClick={closeMenu} onClose={closeMenu}/>}
 		</nav>
 	)
 }

@@ -22,6 +22,7 @@ const SideMenu = (props) => {
 					<Link
 						className="pl-5 h-full w-full pr-96 py-5 font-paragraph font-bold"
 						href="/"
+						onClick={props.onClose}
 					>
 						Home
 					</Link>
@@ -30,6 +31,7 @@ const SideMenu = (props) => {
 					<Link
 						className="pl-5 h-full w-full pr-96 py-5 font-paragraph font-bold"
 						href="/map"
+						onClick={props.onClose}
 					>
 						Map
 					</Link>
@@ -38,6 +40,7 @@ const SideMenu = (props) => {
 					<Link
 						className="pl-5 h-full w-full pr-96 py-5 font-paragraph font-bold"
 						href="/counter"
+						onClick={props.onClose}
 					>
 						Counter
 					</Link>
@@ -46,6 +49,7 @@ const SideMenu = (props) => {
 					<Link
 						className="pl-5 h-full w-full pr-16 py-5 font-paragraph font-bold sm:pr-40 md:pr-72 lg:pr-80"
 						href="/aboutus"
+						onClick={props.onClose}
 					>
 						About Us
 					</Link>
